@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import CityWeather from './components/Cityweather/cityweather';
-import { Provider } from 'react-redux';
-import { store } from './components/Store/store';
+import { Provider } from "react-redux";
+import { store } from "./Store/store";
+import WeatherApp from "./Components/weatrherapp";
 
 function App() {
   return (
     <div>
-      <Provider store={store}>
-      <CityWeather/>
-      </Provider>
+        <Provider store={store}>
+          <WeatherApp/>
+        </Provider>
     </div>
   );
 }
