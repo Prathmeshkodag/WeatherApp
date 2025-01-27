@@ -34,14 +34,13 @@ function WeatherApp() {
             }
         },1000),
           [] 
-     )
+     );
 
      const selectCityName=(e)=>{
         setCityname(e.target.value);
         fetchWeather(e.target.value);
 
-     }
-     console.log(error)
+     };
     return (
         <>
             <div style={{
